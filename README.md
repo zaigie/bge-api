@@ -4,8 +4,20 @@ BGE-large Embeddings api by FastAPI
 
 > Refer to **m3e-large-api**
 
+## Quick Start
+
+### CPU
+
 ```sh
 docker run -d --name bge-large-api -p 6008:6008 jokerwho/bge-large-api:latest
+```
+
+### GPU
+
+> required nvidia-docker2
+
+```sh
+docker run -d --name bge-large-api --gpus all -p 6008:6008 jokerwho/bge-large-api:latest
 ```
 
 ## Test
